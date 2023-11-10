@@ -7,17 +7,33 @@ body {
 
 h1 {
     margin: 0;
+}
+header{
+    margin-top: 0;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
+    padding: 5px;
+}
+/* Hizkuntzen Menua */
+.Hizkuntzak {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    margin-top: 10px;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.Hizkuntzak a {
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.Hizkuntzak img {
+    width: 40px; /* ajusta el tamaño según tus necesidades */
+    height: 40px; /* ajusta el tamaño según tus necesidades */
+    border-radius: 50%;
 }
 
 /* Logoaren formatua */
@@ -28,11 +44,16 @@ header {
 .logo img {
     width: 100px;
 }
-
-nav {
-    background-color: #444242;
+.logo img {
     text-align: center;
-    padding: 10px;
+    padding: 15PX;
+    text-align: center;
+    display: flex;
+}
+nav {
+    background-color: rgb(216, 90, 205);
+    text-align: center;
+    padding: 5px;
 }
 
 nav ul {
@@ -53,7 +74,7 @@ nav a {
 
 /* Textuaren colorea aldatzen du goitikan pasatzerakoan */
 nav a:hover {
-    color: #81cc1f;
+    color: #003099;
     text-decoration: none;
 }
 
@@ -68,7 +89,7 @@ nav a:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
   /* Header-ren argazkia */
-    .card .background {
+.card .background {
     width: 100%;
     height: 150px;
     object-fit: cover;
