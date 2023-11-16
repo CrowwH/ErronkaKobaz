@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <title>Formulario de Registro</title>
+    <link rel="shortcut icon" href="img/icono-home-kobaz.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>KOBAZ ENPRESA</h1>
+        <div class="logo">
+            <img src="img/icono-home-kobaz.png" alt="Enpresaren Logoa" />
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Abantailak.html">Abantailak</a></li>
+            <li><a href="Ezaugarriak.html">Ezaugarriak</a></li>
+            <li><a href="Zerbitzuak.html">Zerbitzuak</a></li>
+            <li><a href="GuriBuruz.html">Guri Buruz</a></li>
+            <li class="Hizkuntzak">
+                <a href="Registro.html"><img src="img/España.png" alt="Español"/></a>
+                <a href="Erregistroa.html"><img src="img/euskalherria.png" alt="Euskera" /></a>
+            </li>
+            <li class="I2">
+                <a href="hasisaioa.html">
+                    <img src="img/avatar.png" alt="Login" />
+                </a>
+            </li>
+            <li class="dropdown">
+                <a href="#">Kontaktua eta Erregistroa</a>
+                <div class="dropdown-content">
+                    <a href="Harremana.html">Harremanetarako formularioa</a>
+                    <a href="Erregistroa.html">Erregistro-formularioa</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+        <<div class="main-container">
+            <div class="heading">
+                <h1 class="heading__title">Ongi etorri gure komunitatera!</h1>
+                <p class="heading__credits">
+                    Erregistratu orain gurekin bat egiteko eta esperientzia paregabeaz gozatzeko.
+                    Bihur zaitez gure plataformaren parte eta sar zaitez funtzio esklusiboetan.
+                    Bete ezazu erregistro-formularioa jarraian, zure kontu pertsonalizatua sortzeko.
+                    Hunkituta gaude zu ontzian izateagatik eta gure komunitateak eskaintzen duen guztia zurekin partekatzeagatik.
+                </p>
+            </div>
+        </div>
+    <div id="containerR">
+        <h2>Erabiltzailearen erregistroa</h2>
+        <form action="#" method="post">
+            <label for="nombre">Izen Abizena:</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="correo">Korreoa:</label>
+            <input type="email" id="correo" name="correo" required />
+
+            <label for="verificarCorreo">Posta egiaztatu:</label>
+            <input type="email" id="verificarCorreo" name="verificarCorreo" required />
+
+            <label for="direccion">Helbidea:</label>
+            <input type="text" id="direccion" name="direccion" required />
+
+            <label for="telefono">Telefono Zenbakia:</label>
+            <input type="tel" id="telefono" name="telefono" required />
+
+            <label for="fechaNacimiento">Jaiotze Data:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required />
+
+            <label for="sexo">Sexua:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="masculino">Gizona</option>
+                <option value="femenino">Emakumea</option>
+                <option value="nodecir">Nahiago dut ez esan</option>
+                <option value="otro">Beste bat</option>
+            </select>
+
+            <label for="contrasena">Pasahitza:</label>
+            <input type="password" id="contrasena" name="contrasena" required />
+
+            <input type="submit" value="Erregistratu" />
+            <input type="reset" value="Ezabatu" />
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2023 KOBAZ ENPRESA. Todos Los Derechos Reservados.</p>
+        <div class="footer-buttons">
+            <a href="mailto:kobaz@gmail.com" class="button gmail-button">
+                <img src="img/gmail.png" alt="Logo Gmail">
+            </a>
+            <a href="https://www.instagram.com/tu_usuario/" class="button instagram-button" target="_blank">
+                <img src="img/instagram.png" alt="Logo Instagram">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
