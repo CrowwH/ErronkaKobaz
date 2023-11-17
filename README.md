@@ -9,6 +9,8 @@
 Lehenengo errepositorio bat eduki behar dugu eginda. Hau egin ondoren gure Visual Studio Codera edo PowerShell-era joango gara eta terminal bat irekiko dugu. Terminal honetan ondorengo komandoa jarri beharko duzu[^1]:
 
 [^1]: Karpeta bat sortu eta karpeta hori ireki VS-en eta klonatu karpetan horretan errepositorioa <br><br>
+> [!NOTE]
+> Highlights information that users should take into account, even when skimming.
 
 <code>git clone "errepositorioaren helbidea"</code>
 <p>Hau egin ondoren gure errepositorioa klonatuta geldituko da guk esan diogun karpetan</p>
