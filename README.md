@@ -10,7 +10,7 @@
 # 🛠️ Ireki eta exekutatu Web Gunea eta Odoo-a:
 <p>Gure web gunea zure ordenagailuan izateko, ondorengo comando jarri beharko duzu zure terminalean edo PowerShell-en</p>
 <p>Lehenengo zure ordenagailuan GIT,WSL eta Docker instalatuta eduki behar izango duzu.</p>
-<p>Ondoren gure GitHub-eko "docker-compose.dml" artxiboa deskargatu egin behar duzu eta ondoren ondorengo comando exekutatu:</p>
+<p>Ondoren gure GitHub-eko "docker-compose.yml" artxiboa deskargatu egin behar duzu eta ondoren ondorengo comando exekutatu:</p>
 
-<h3> Docker Compose-a altxatzeko</h3>
+## Docker Compose-a altxatzeko
 - <code>docker compose up</code>
