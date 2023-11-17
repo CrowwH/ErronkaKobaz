@@ -16,7 +16,7 @@
 <br>
 <p>Ondoren gure Nginx kontenedorea egingo dugu.Horretarako ondorengo komandoa jarri beharko duzu terminalean</p>
 <code> docker run --name "Nahi Duzun Zerbitzari Izena" -v "Non egongo da gordeta zure weborrialdea":/usr/share/nginx/html -p 80:80 -d nginx </code>
-<br>
+<br><br>
 <p>Komando horrekin lortuko duguna da gure Nginx kontenedora sortzea eta martxan jartzea.</p>
 
 
