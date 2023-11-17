@@ -8,7 +8,6 @@
 
 Lehenengo errepositorio bat eduki behar dugu eginda. Hau egin ondoren gure Visual Studio Codera edo PowerShell-era joango gara eta terminal bat irekiko dugu. Terminal honetan ondorengo komandoa jarri beharko duzu:
 <br><br>
-
 > [!NOTA]
 > Karpeta bat sortu eta karpeta hori ireki VS-en eta klonatu karpetan horretan errepositorioa.
 
@@ -27,34 +26,6 @@ Lehenengo errepositorio bat eduki behar dugu eginda. Hau egin ondoren gure Visua
 **Docker Compose-a altxatzeko**:
 - <code>docker compose up</code>
 
-<p>Zer dauka kode Honek?</p>
+Zer dauka kode Honek?
+Kode honek daukadana da gure Nginx zerbitzua eta Odooren zerbitzuaren kontenedoreak. Kode honek gure zerbitzuen portua eta helbidea izango du.
 
-<code>
-version: '3.1'
-services:
-  web:
-    image: nginx
-    volumes:
-      - ./ErronkaKobaz/web:/usr/share/nginx/html
-    ports:
-      - "8080:80"
-    environment:
-      - NGINX_HOST=foobar.com
-      - NGINX_PORT=80
-  odoo-server:
-    image: odoo:16.0
-    depends_on:
-      - mydb
-    ports:
-      - "8069:8069"
-    environment:
-    - HOST=mydb
-    - USER=odoo
-    - PASSWORD=myodoo
-  mydb:
-    image: postgres:15
-    environment:
-      - POSTGRES_DB=postgres
-      - POSTGRES_PASSWORD=myodoo
-      - POSTGRES_USER=odoo
-</code>
