@@ -6,7 +6,7 @@
 
 # Nola sortu Nginx kontenedorea:
 <p>Lehenengo errepositorio bat eduki behar dugu eginda. Hau egin ondoren gure Visual Studio Codera joango gara eta terminal bat irekiko dugu. Terminal honetan ondorengo komandoa jarri beharko duzu:</p>
-> Karpeta bat sortu eta karpeta hori ireki VS-en eta klonatu karpetan horretan errepositorioa
+> Karpeta bat sortu eta karpeta hori ireki VS-en eta klonatu karpetan horretan errepositorioa <br>
 <code>git clone "errepositorioaren helbidea"</code>
 <p>Hau egin ondoren gure errepositorioa klonatuta geldituko da guk esan diogun karpetan</p>
 
