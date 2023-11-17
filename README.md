@@ -24,3 +24,31 @@ Lehenengo errepositorio bat eduki behar dugu eginda. Hau egin ondoren gure Visua
 
 **Docker Compose-a altxatzeko**:
 - <code>docker compose up</code>
+<p>Zer dauka kode Honek?</p>
+<code>version: '3.1'
+services:
+  web:
+    image: nginx
+    volumes:
+      - ./ErronkaKobaz/web:/usr/share/nginx/html
+    ports:
+      - "8080:80"
+    environment:
+      - NGINX_HOST=foobar.com
+      - NGINX_PORT=80
+  odoo-server:
+    image: odoo:16.0
+    depends_on:
+      - mydb
+    ports:
+      - "8069:8069"
+    environment:
+    - HOST=mydb
+    - USER=odoo
+    - PASSWORD=myodoo
+  mydb:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=myodoo
+      - POSTGRES_USER=odoo</code>
