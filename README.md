@@ -8,5 +8,5 @@
 <p></p>
 
 
-\🛠️ Ireki eta exekutatu Web Gunea eta Odoo-a:
+# 🛠️ Ireki eta exekutatu Web Gunea eta Odoo-a:
 <p>Gure web gunea zure ordenagailuan izateko, ondorengo comando jarri beharko duzu zure terminalean edo PowerShell-en</p>
