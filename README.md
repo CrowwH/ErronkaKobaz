@@ -6,11 +6,11 @@
 
 # Nola sortu Nginx kontenedorea:
 
-Lehenengo errepositorio bat eduki behar dugu eginda. Hau egin ondoren gure Visual Studio Codera edo PowerShell-era joango gara eta terminal bat irekiko dugu. Terminal honetan ondorengo komandoa jarri beharko duzu[^1]:
+Lehenengo errepositorio bat eduki behar dugu eginda. Hau egin ondoren gure Visual Studio Codera edo PowerShell-era joango gara eta terminal bat irekiko dugu. Terminal honetan ondorengo komandoa jarri beharko duzu:
+<br><br>
 
-[^1]: Karpeta bat sortu eta karpeta hori ireki VS-en eta klonatu karpetan horretan errepositorioa <br><br>
-> [!NOTE]
-> Highlights information that users should take into account, even when skimming.
+> [!NOTA]
+> Karpeta bat sortu eta karpeta hori ireki VS-en eta klonatu karpetan horretan errepositorioa.
 
 <code>git clone "errepositorioaren helbidea"</code>
 <p>Hau egin ondoren gure errepositorioa klonatuta geldituko da guk esan diogun karpetan</p>
@@ -26,8 +26,11 @@ Lehenengo errepositorio bat eduki behar dugu eginda. Hau egin ondoren gure Visua
 
 **Docker Compose-a altxatzeko**:
 - <code>docker compose up</code>
+
 <p>Zer dauka kode Honek?</p>
-<code>version: '3.1'
+
+<code>
+version: '3.1'
 services:
   web:
     image: nginx
@@ -53,4 +56,5 @@ services:
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_PASSWORD=myodoo
-      - POSTGRES_USER=odoo</code>
+      - POSTGRES_USER=odoo
+</code>
