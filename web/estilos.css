@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    max-width: 100%;
 }
 .main-content {
     flex-grow: 1;
@@ -197,117 +198,108 @@ h2 {
 
 /*************************Zerbitzuak Txartelak********************/
 
-    /***********HEADING**************** */
+/***********HEADING**************** */
+.heading {
+    text-align: center;
+}
+.heading__title {
+    font-weight: 600;
+}
+.heading__credits {
+    margin: 10px 0px;
+    color: #888888;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+.heading__link {
+    text-decoration: none;
+}
+.heading__credits .heading__link {
+    color: inherit;
+}
+.main-container {
+    padding: 30px;
+}
+/******CARDS*********/
+.cardZ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-    .heading {
-        text-align: center;
-    }
-    .heading__title {
-        font-weight: 600;
-    }
-    .heading__credits {
-        margin: 10px 0px;
-        color: #888888;
-        font-size: 25px;
-        transition: all 0.5s;
-    }
-
-    .heading__link {
-        text-decoration: none;
-    }
-    .heading__credits .heading__link {
-        color: inherit;
-    }
-    .main-container {
-        padding: 30px;
-    }
-    /******CARDS*********/
-    .cardZ {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .cardZ0 {
-        margin: 20px;
-        padding: 20px;
-        width: 500px;
-        min-height: 200px;
-        display: grid;
-        grid-template-rows: 20px 50px 1fr 50px;
-        border-radius: 10px;
-        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
-        transition: all 0.2s;
-    }
-
-    .cardZ0:hover {
-        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
-        transform: scale(1.01);
-    }
-    .card__icon {
-        position: absolute;
-        text-decoration: none;
-        width: 50px;
-        color: rgba(255, 255, 255, 0.9);
-    }
-    .card__iconv { /*Salmenten kudeaketa estilo propioa*/
-        position: absolute;
-        text-decoration: none;
-        width: 70px;
-        color: rgba(255, 255, 255, 0.9);
-    }
-    .card__icon {
-        grid-row: 1/3;
-        font-size: 30px;
-    }
-
-    .card__title {
-        grid-row: 3/4;
-        font-weight: 400;
-        color: #ffffff;
-    }
-
-    .card__text {
-        grid-row: 4/5;
-        align-self: center;
-        color: white;
-    }
+.cardZ0 {
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+}
+.cardZ0:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+.card__icon {
+    position: absolute;
+    text-decoration: none;
+    width: 50px;
+    color: rgba(255, 255, 255, 0.9);
+}
+.card__iconv { /*Salmenten kudeaketa estilo propioa*/
+    position: absolute;
+    text-decoration: none;
+    width: 70px;
+    color: rgba(255, 255, 255, 0.9);
+}
+.card__icon {
+    grid-row: 1/3;
+    font-size: 30px;
+}
+.card__title {
+    grid-row: 3/4;
+    font-weight: 400;
+    color: #ffffff;
+}
+.card__text {
+    grid-row: 4/5;
+    align-self: center;
+    color: white;
+}
 
     /********CARD BACKGROUNDS*************/
-
-    .cardZ1 {
-        background: radial-gradient(#000000, #7f8385);
+.cardZ1 {
+    background: radial-gradient(#000000, #7f8385);
+}
+.cardZ2{
+    background: radial-gradient(#000000, #7f8385);
+}
+.cardZ3 {
+    background: radial-gradient(#000000, #7f8385);
+}
+.cardZ4 {
+    background: radial-gradient(#000000, #7f8385);
+}
+.cardZ5 {
+    background: radial-gradient(#000000, #7f8385);
+}
+.cardZ6 {
+    background: radial-gradient(#000000, #7f8385);
+}
+/*************RESPONSIVE****************/
+@media (max-width: 1600px) {
+    .cardZ {
+    justify-content: center;
     }
-
-    .cardZ2{
-        background: radial-gradient(#000000, #7f8385);
-    }
-
-    .cardZ3 {
-        background: radial-gradient(#000000, #7f8385);
-    }
-
-    .cardZ4 {
-        background: radial-gradient(#000000, #7f8385);
-    }
-    .cardZ5 {
-        background: radial-gradient(#000000, #7f8385);
-    }
-    .cardZ6 {
-        background: radial-gradient(#000000, #7f8385);
-    }
-    /*************RESPONSIVE****************/
-    @media (max-width: 1600px) {
-        .cardZ {
-        justify-content: center;
-        }
-    }
+}
 
 
 /************************Ezaugarri Txartelak*************************/
 
 .container2{
-    width: 1000px;
+    max-width: 100%;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -541,6 +533,7 @@ h2 {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
+    margin-bottom: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 label {
