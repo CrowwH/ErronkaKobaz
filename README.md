@@ -30,6 +30,6 @@
 **Docker Compose-a altxatzeko**:
 - <code>docker compose up</code>
 <br>
-Zer dauka kode Honek?
+<p>Zer dauka kode Honek?</p>
 <br>
-Kode honek daukadana da gure Nginx zerbitzua eta Odooren zerbitzuaren kontenedoreak. Kode honek gure zerbitzuen portua eta helbidea izango du.
+<p>Kode honek daukadana da gure Nginx zerbitzua eta Odooren zerbitzuaren kontenedoreak. Kode honek gure zerbitzuen portua eta helbidea izango du.</p>
