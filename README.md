@@ -3,6 +3,7 @@
 <br>
 <p>Ondorengo dokumentuan azalduta egongo da nola lortu dugun gure Nginx zerbitzua martxan jartzen eta nola jarri dezakezu zuk martxan zure ordenagailuan.</p>
 <br>
+
 # Nola sortu Nginx kontenedorea:
 <p></p>
 
@@ -12,5 +13,5 @@
 <p>Lehenengo zure ordenagailuan GIT,WSL eta Docker instalatuta eduki behar izango duzu.</p>
 <p>Ondoren gure GitHub-eko "docker-compose.yml" artxiboa deskargatu egin behar duzu eta ondoren ondorengo comando exekutatu:</p>
 
-## Docker Compose-a altxatzeko
+### Docker Compose-a altxatzeko
 - <code>docker compose up</code>
