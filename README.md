@@ -12,4 +12,4 @@
 <p>Lehenengo zure ordenagailuan GIT,WSL eta Docker instalatuta eduki behar izango duzu.</p>
 <p>Ondoren gure GitHub-eko "docker-compose.dml" artxiboa deskargatu egin behar duzu eta ondoren ondorengo comando exekutatu:</p>
 
-<code>docker compose up</code>
+- <code>docker compose up</code>
